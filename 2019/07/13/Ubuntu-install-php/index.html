@@ -6,19 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://zsjin.github.io">
-  <title>Tag: 杂谈 | Zunjin的博客</title>
+  <title>Ubuntu install php | Zunjin的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="日常学习记录，生活感悟！">
-<meta name="keywords" content="极客,编程,代码,开源,前端,后端,全栈,PHP,HTML5,JAVASCRIT">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Zunjin的博客">
-<meta property="og:url" content="https://zsjin.github.io/tags/杂谈/index.html">
+  <meta name="description" content="Ubuntu install php1.在PHP官网下载相应的php版本  例如：php-7.2.0.tar.gz  进行解压：   1sudo tar -zvxf php-7.2.0.tar.gz  2.PHP源码安装的依赖 1sudo apt install gcc make openssl curl libbz2-dev libxml2-dev libjpeg-dev libpng-dev">
+<meta name="keywords" content="install,PHP,笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ubuntu install php">
+<meta property="og:url" content="https://zsjin.github.io/2019/07/13/Ubuntu-install-php/index.html">
 <meta property="og:site_name" content="Zunjin的博客">
-<meta property="og:description" content="日常学习记录，生活感悟！">
+<meta property="og:description" content="Ubuntu install php1.在PHP官网下载相应的php版本  例如：php-7.2.0.tar.gz  进行解压：   1sudo tar -zvxf php-7.2.0.tar.gz  2.PHP源码安装的依赖 1sudo apt install gcc make openssl curl libbz2-dev libxml2-dev libjpeg-dev libpng-dev">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-07-15T11:00:28.344Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Zunjin的博客">
-<meta name="twitter:description" content="日常学习记录，生活感悟！">
+<meta name="twitter:title" content="Ubuntu install php">
+<meta name="twitter:description" content="Ubuntu install php1.在PHP官网下载相应的php版本  例如：php-7.2.0.tar.gz  进行解压：   1sudo tar -zvxf php-7.2.0.tar.gz  2.PHP源码安装的依赖 1sudo apt install gcc make openssl curl libbz2-dev libxml2-dev libjpeg-dev libpng-dev">
   
   
     <link rel="icon" href="/favicon.png">
@@ -142,64 +143,167 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Ubuntu-install-php" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/07/04/new-day/" class="archive-article-date">
-  	<time datetime="2019-07-04T02:36:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-04</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/07/04/new-day/">每一天都是新的一天</a>
+    <h1 class="article-title" itemprop="name">
+      Ubuntu install php
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2019/07/13/Ubuntu-install-php/" class="archive-article-date">
+  	<time datetime="2019-07-13T15:08:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-13</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Ubuntu-install-php"><a href="#Ubuntu-install-php" class="headerlink" title="Ubuntu install php"></a>Ubuntu install php</h2><p>1.在<a href="https://php.net" target="_blank" rel="noopener">PHP官网</a>下载相应的php版本<br>  例如：php-7.2.0.tar.gz<br>  进行解压：</p>
+  <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo tar -zvxf php-7.2.0.tar.gz</span><br></pre></td></tr></table></figure>
+
+<p>2.PHP源码安装的依赖</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install gcc make openssl curl libbz2-dev libxml2-dev libjpeg-dev libpng-dev libfreetype6-dev libzip-dev</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+<p>3.进入解压后目录</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd php-7.2.0</span><br><span class="line">sudo ./configure --prefix=/home/work/study/soft/php --with-config-file-path=/home/work/study/soft/php/etc --enable-mbstring --enable-ftp --with-gd --with-jpeg-dir=/usr --with-png-dir=/usr --with-mysql=mysqlnd --with-mysqli=mysqlnd --with-pdo-mysql=mysqlnd --with-pear --enable-sockets --with-freetype-dir=/usr --with-zlib --with-libxml-dir=/usr --with-xmlrpc --enable-zip --enable-fpm --enable-xml --enable-sockets --with-gd --with-zlib --with-iconv --enable-zip --with-freetype-dir=/usr/lib/ --enable-soap --enable-pcntl --enable-cli --with-curl</span><br></pre></td></tr></table></figure>
+
+<p>注解：–prefix=/usr/local/php 说明php安装的位置，–with-config-file-path=/usr/local/php 说明php.ini配置文件的位置，–enable 需要安装的扩展。</p>
+<p>注意：当执行 ./configure 时如果出现报错说明php安装时需要的依赖没有完全提前安装好，需要进行安装：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install [相应的依赖]</span><br></pre></td></tr></table></figure>
+
+<p>4.编译完成之后，执行命令：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo make</span><br></pre></td></tr></table></figure>
+
+<p>注意：这一过程时间较长</p>
+<p>5.make完成后，执行安装命令：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo make install</span><br></pre></td></tr></table></figure>
+
+<p>6.php安装扩展，以Redis扩展为例：<br>1)获取Redis扩展文件</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget http://pecl.php.net/get/redis-5.0.1.tgz</span><br></pre></td></tr></table></figure>
+
+<p> 2)解压</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo tar zxvf redis-5.0.1.tgz</span><br></pre></td></tr></table></figure>
+
+<p>3)进入redis-5.0.1,并使用phpize生成configure</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd redis-5.0.1</span><br><span class="line">sudo /home/work/study/soft/php/bin/phpize</span><br></pre></td></tr></table></figure>
+
+<p>4)./configure</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ./configure --with-php-config=/home/work/study/soft/php/bin/php-config</span><br></pre></td></tr></table></figure>
+
+<p>5)make &amp;&amp; make install</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo make &amp;&amp; sudo make install</span><br></pre></td></tr></table></figure>
+
+<p>6)可以查看扩展</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /home/work/study/soft/php/lib/php/extensions/no-debug-non-zts-20180731/</span><br></pre></td></tr></table></figure>
+
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>成功的路上需要他人的陪伴<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/blogImg/WX.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">install</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">杂谈</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">PHP</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2019/07/13/Ubuntu-remove-mysql/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Ubuntu remove mysql</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -227,9 +331,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
